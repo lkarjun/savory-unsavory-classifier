@@ -5,7 +5,7 @@ from urllib.request import urlretrieve
 st.title("Savory Unsavory Classifier😎😎")
 rslt = st.subheader("")
 loading_text = st.text("Loading...")
-LABEL = {"unsavory": "Bad Guy", "savory": "Good Guy"}
+LABEL = {"unsavory": "Bad Guy 🙅‍♂️", "savory": "Good Guy 🦸‍♂️"}
 def load_module(loading_text):
   loading_text.text('Loading Module ✊')
   from fastai.learner import load_learner
@@ -19,7 +19,7 @@ def load_model(loading_text):
   from pathlib import Path
   urlretrieve("https://github.com/lkarjun/savory-unsavory-classifier/blob/master/Models/model-2022-05-10%2006_45_27.074624.pkl?raw=true", 
               "model.pkl")
-  loading_text.text("Loading Model ✅")
+  loading_text.text("")
   return load_learner("model.pkl")
 
 def load_image(loading_text, image):
