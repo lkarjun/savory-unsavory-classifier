@@ -38,4 +38,4 @@ if image_file:
     image = load_image(loading_text, image_file)
     learn = load_model(loading_text)
     prediction = learn.predict(image)
-rslt.subheader(f"You're an {prediction[0]}")
+    rslt.subheader(f"You're an {prediction[0]}")
