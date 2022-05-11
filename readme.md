@@ -1,5 +1,7 @@
 - ## Hi there 👋👋
   ## 💾 **Savory Unsavory Classifier**
+  
+  [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/lkarjun/savory-unsavory-classifier/app.py/)
 
   Kaggle Dataset **GOOD-GUYSBAD-GUYS-IMAGE-DATA-SET** ❤️
 

@@ -5,7 +5,7 @@ from urllib.request import urlretrieve
 st.title("Savory Unsavory Classifier😎😎")
 rslt = st.subheader("")
 loading_text = st.text("Loading...")
-
+LABEL = {"unsavory": "Bad Guy", "savory": "Good Guy"}
 def load_module(loading_text):
   loading_text.text('Loading Module ✊')
   from fastai.learner import load_learner
@@ -38,4 +38,4 @@ if image_file:
     image = load_image(loading_text, image_file)
     learn = load_model(loading_text)
     prediction = learn.predict(image)
-    rslt.subheader(f"You're an {prediction[0]}")
+    rslt.subheader(f"You're an {LABEL[prediction[0]]}")
